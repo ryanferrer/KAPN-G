@@ -1,0 +1,19 @@
+{
+  "name": "kickass-project-name-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanferrer/kickass-project-name-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanferrer/kickass-project-name-generator/issues"
+  },
+  "homepage": "https://github.com/ryanferrer/kickass-project-name-generator#readme"
+}
