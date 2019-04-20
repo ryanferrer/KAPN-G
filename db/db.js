@@ -1,9 +1,19 @@
-const mongoose = require('mongoose');
+const MongoClient = require('mongodb').MongoClient;
+ 
+// Connection URL
+const url = 'mongodb://localhost:27017';
+ 
+// Database Name
+const dbName = 'kapng';
+ 
+// Use connect method to connect to the server
+MongoClient.connect(url, { useNewUrlParser: true }, function(err, client) {
+  console.log("Connected successfully to server");
+ 
+  // const db = client.db(dbName);
 
-mongoose.connect('mongodb://localhost/kapng', {useNewUrlParser: true});
-
-const db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function() {
-  console.log(`Orders KAP'N?`);
+  client.close();
 });
+
+
+// module.exports = db;
