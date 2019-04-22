@@ -1,9 +1,5 @@
-const db = require('./db.js');
+const client = require('./db.js');
 
-// const collection = db.collection('kapng');
-
-const insertToDB = (obj) => {
-  db.save(obj);
+const getName = (cb) => {
+  c
 }
-
-insertToDB({myName: 'ryden'});
