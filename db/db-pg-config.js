@@ -8,7 +8,7 @@ const config = {
   database: process.env.DB
 }
 
-console.log('oy!', process.env);
+console.log('oy!', process.env.DB);
 
 const client = new Client(config);
 
