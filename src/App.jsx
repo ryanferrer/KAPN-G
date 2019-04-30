@@ -5,13 +5,23 @@ class App extends Component {
   constructor(props){
     super(props);
 
-    this.state = {};
+    this.state = {
+      adjectives: ['adolescent', 'boastful', 'captivating', 'dubious', 'excellent'],
+      nouns: ['axolotl', 'bandicoot', 'capybara', 'dalmation', 'echidna'],
+      currentAdjective: 'Nonexistent',
+      currentNoun: 'Nematode'
+    };
+  }
+
+  randomlySelectOnePair(){
+
   }
 
   render(){
     return (
       <>
-        Boy Howdy!
+        <div>Here's your kick-ass generated name for your next project!!</div>
+        <div>{this.state.currentAdjective} {this.state.currentNoun}</div>
       </>
     );
   }
