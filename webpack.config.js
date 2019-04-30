@@ -1,5 +1,9 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = {
+  entry: "./src/App.jsx",
+  output: {
+    filename: "bundle.js"
+  },
   module: {
     rules: [
       {
